@@ -30,12 +30,15 @@ export default function Chat({ onDisconnect }) {
   }, [])
   
   return (
-    <div>
-      <h1>
-        This is the {room} CHAT room for {username}
-      </h1>
-      <MessagesBox messages={messages} />
-      <MessageInput />
+    <div className="h-screen">
+      <div className="h-full flex flex-col mx-2">
+        <div className="flex-grow">
+          <MessagesBox messages={messages} />
+        </div>
+        <div className="flex-none my-2 sticky bottom-1">
+          <MessageInput />
+        </div>
+      </div>
     </div>
   )
 }
