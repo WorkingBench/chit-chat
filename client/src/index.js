@@ -19,7 +19,7 @@ export default function App() {
     return handleDisconnect
   }, [])
   const handleDisconnect = () => {
-    socket.disconnect()
+    socket.off()
   }
   return (
     <SocketContext.Provider value={socket}>

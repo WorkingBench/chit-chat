@@ -38,7 +38,7 @@ export default function Login() {
       <div className="mx-auto mb-5">
         <Link to="/" className="font-black italic text-4xl sm:text-5xl text-white uppercase">Chit-Chat</Link>
       </div>
-      <div className="flex flex-initial flex-col items-center px-8 py-10 bg-white rounded-lg shadow-xl space-y-5">
+      <div className="flex flex-initial flex-col items-center px-8 py-10 bg-white rounded-lg shadow-xl space-y-5 mx-2">
         <div>
           <h2 className="text-3xl font-bold text-center text-gray-700">
             Connection Details

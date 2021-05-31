@@ -15,7 +15,7 @@ import MessageInput from '../components/Chat/MessageInput'
 
 export default function Chat({ onDisconnect }) {
   const socket = useContext(SocketContext)
-  const { username, room } = useParams()
+  const { room } = useParams()
   const [messages, setMessages] = useState([])
 
   usePageTitle(`CHAT: ${room}`)
